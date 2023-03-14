@@ -1,0 +1,66 @@
+<!-- menandakan html 5F -->
+<!DOCTYPE html>
+<!-- tag pembuka html-->
+<!-- ada 2 jenis tag di html -> open-closed tag & inline tag -->
+<!-- pada tag terdapat property=value -->
+<!-- lang="en" digunakan untuk search engine -->
+<html lang="en" id="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- ini contoh css -->
+    <style>
+        #h1special{
+            color: red;
+        }
+        .h2special{
+            color: yellowgreen
+        }
+        h1{
+            /* property: value; */
+            color: blue;
+            text-decoration: underline;
+            display: inline;
+        }
+        h2{
+            /* cara membuat block menjadi inline */
+            display: inline;
+        }
+        /* cara membuat span menjadi block */
+        span{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <!-- jenis display tag html: block (contoh: h1) & inline (span) -->
+    <!-- id lebih diutamakan daripada class -->
+    <h1 id="h1special" class="h2special">My Personal Website</h1>
+    <h1>H1 yang lain</h1>
+    <h2 class="h2special">Welcome my friends!</h2>
+    <p>Hello, my name is Roy. I am a web developer.</p>
+    <span>ini inline</span>
+    <span>ini juga inline</span>
+    <p>This is my personal website.</p>
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <img src="memecoba.jpg" alt="">
+    <!-- penggunaan tabel -->
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>:</td>
+
+        </tr>
+    </table>
+</body>
+
+</html>
+<!-- tag penutup html -->

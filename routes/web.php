@@ -15,7 +15,10 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::group(['prefix'=> '/User'],function(){
+    Route::get('/home',[WebController::class, 'index'])->name('home');
+});
 
-Route::get('/', [\App\Http\Controllers\WebController::class, 'index']);
-
-Route::get('/about', [\App\Http\Controllers\WebController::class, 'about']);
+Route::group(['prefix'=> '/Admin'],function(){
+    Route::get('/admin',[WebController::class, 'admin'])->name('adminStarter');
+});
